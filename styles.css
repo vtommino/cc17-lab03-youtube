@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    --header : 56px;
+    --sidebar : 240px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    /* background-color: aquamarine; */
+    height: var(--header);
+}
+header {
+    margin: 0;
+    padding: 0;
+    /* background-color: aqua; */
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 8px;
+}
+
+nav.left {
+    padding: 0px;
+    /* border: 1px dashed red; */
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+nav.left .thailand {
+    /* background-color: yellow; */
+    height: 70%;
+    font-size: 10px;
+    font-family: "Oswald", sans-serif ;
+    font-weight: bold;
+}
+
+nav.center {
+    /* border: 1px dashed red; */
+    /* width: 100px; */
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    /* background-color: forestgreen; */
+    
+}
+
+nav.center .search-bar{
+    margin: 0;
+    padding: 0;
+    gap: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-shrink: 1; */
+}
+
+nav.center input {
+    padding-left: 20px;
+    background-color: rgb(225, 225, 225);
+    border: none;
+    height: 30px;
+    border-right: none;
+    border-radius: 40px 0px 0px 40px;
+    /* flex-shrink: 1; */
+    width: 300px;
+}
+
+nav.center div.input-right {
+    background-color: rgb(193, 193, 193);
+    /* color: solid antiquewhite; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: none;
+    width: 40px;
+    height: 30px;
+    border-right: none;
+    border-radius: 0px 40px 40px 0px;
+}
+
+nav.center .round-icon {
+    width: 30px;
+    height: 30px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+nav.right {
+    /* border: 1px dashed red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.oswald {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+h1 {
+    font-family: "Oswald", sans-serif ;
+    font-weight: bold;
+    font-stretch: condensed;
+    font-size: 18px;
+}
+
+
+nav.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+nav.right i {
+    font-size: 20px;
+    color: gray;
+}
+header .logo span {
+    bottom: 1px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+main {
+    display: flex;
+    min-height: calc(100vh - 56px)
+}
+
+.side-bar {
+    /* border: 1px dashed blue; */
+    width: var(--sidebar);
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.lower-side-bar {
+    margin-top: 30px;
+}
+
+.content {
+    /* border: 1px solid red; */
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+}
+
+main .box-item01 {
+    /* background-color: chartreuse; */
+    padding: 10px;
+    margin-left: 20px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 30px;
+}
+
+main .box-item02 {
+    /* background-color: blue; */
+    padding: 10px;
+    margin-left: 20px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 30px;
+}
+
+.content .video-box {
+    /* border: 1px dashed red; */
+    width: 347px;
+    height: 280px;
+    background-color: rgb(218, 218, 218);
+    /* display: flex;
+    justify-content: center;
+    align-items: stretch; */
+}
+
+.content .video-thumbnail {
+    width: 346px;
+    height: 174px;
+    background-color: yellow;
+}
+
+.content .video-box .video-description {
+    width: 346px;
+    height: 100px;
+    display: flex;
+    padding: 15px;
+
+}
+
+.content .video-box .video-description .user-photo {
+    width: 30px;
+    height: 30px;
+    display: flex;
+
+}
+
+.content video.box .video-description .video-description-text {
+    display: flex;
+}
+
+.number-views {
+    font-size: 12px;
+}
+
+.video-owner-name {
+    font-size: 12px;
+}
